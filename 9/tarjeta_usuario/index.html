@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <section class="Banner">
+        <h1 class="titulo">Perfil</h1>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li>Inicio</li>
+                <li>Mi perfil</li>
+                <li>Conexiones</li>
+            </ul>
+        </nav>
+        <button class="cerrar-sesion">Cerrar sesión</button>
+    </section>
+</header>
+
+<body>
+    <div class="main-container">
+        <!-- Tarjeta de perfil -->
+        <div class="profile-card">
+            <div class="profile-header"></div>
+            <div class="profile-avatar">
+                <img src="img/user-circle.png" alt="Profile Avatar">
+            </div>
+            <div class="profile-info">
+                <h2>Jane Doe</h2>
+                <p class="location">
+                    <img src="img/map-marker.png" alt="Location Icon" class="icon"> Bergen, Noruega
+                </p>
+                <p class="description">Desarrolladora FrontEnd <br> Conocimientos en HTML, CSS, JavaScript</p>
+                <a href="#" class="edit-profile">
+                    <img src="img/gear.png" alt="Edit Icon" class="icon"> editar perfil
+                </a>
+            </div>
+        </div>
+        
+        <!-- Panel de conexiones -->
+        <div class="connections-container">
+            <!-- Panel de Solicitudes de conexión -->
+            <div class="additional-panel-2">
+                <div class="panel-header">
+                    <h2 class="education-title">Solicitudes de conexión</h2>
+                    <button class="Ver_todas">Ver todas</button>
+                </div>
+                <div class="connection-item">
+                    <img src="img/user-circle.png" alt="Profile Avatar" class="request-img"> 
+                    <p>Steve Jobs</p>
+                    <div class="connection-actions">
+                        <img src="img/check-icon.png" alt="Check icon" class="Check_icon">
+                        <img src="img/delete-1-icon.png" alt="rechazar" class="rechazar icon">
+                    </div>
+                </div>
+                <div class="connection-item">
+                    <img src="img/user-circle.png" alt="Profile Avatar" class="request-img"> 
+                    <p>Bill Gates</p>
+                    <div class="connection-actions">
+                        <img src="img/check-icon.png" alt="Check icon" class="Check_icon">
+                        <img src="img/delete-1-icon.png" alt="rechazar" class="rechazar icon">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel de Tus conexiones -->
+            <div class="additional-panel-1">
+                <div class="panel-header">
+                <h2 class="education-title">Tus Conexiones</h2>
+                <button class="Ver_todas">Ver todas</button>
+                </div>
+                <div class="request-item">
+                    <img src="img/user-circle.png" alt="Profile Avatar" class="request-img"> 
+                    <p>Richard Stallman</p>
+                </div>
+                <div class="request-item">
+                    <img src="img/user-circle.png" alt="Profile Avatar" class="request-img"> 
+                    <p>Linus Torvalds</p>
+                </div>
+                <div class="request-item">
+                    <img src="img/user-circle.png" alt="Profile Avatar" class="request-img"> 
+                    <p>Ada Lovelace</p>
+                </div>
+                <div class="request-item">
+                    <img src="img/user-circle.png" alt="Profile Avatar" class="request-img"> 
+                    <p>Grace Hopper</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
