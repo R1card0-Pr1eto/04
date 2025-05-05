@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.Padre{
+    background-color: #59C7EE;
+    padding: 10px;
+    margin: 50px;
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    justify-content: space-around;
+    justify-content: space-evenly;
+    }
+
+.Padre img {
+    width: 200px;
+}
+
+.segundo {
+    background-color: #D3A7C1;
+    padding: 20px;
+    margin: 50px;
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    justify-content: space-around;
+    }
+    
+.segundo img {
+        width: 200px;
+}
+
+.tercero {
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    justify-content: space-around;
+    }
+
+.tercero img {
+        width: 200px;
+}
