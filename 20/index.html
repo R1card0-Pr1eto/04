@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitio Temático Flex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <h2>🌍 Explorador</h2>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Galería</a></li>
+      <li><a href="#">Favoritos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+  <main class="contenido">
+    <h1>🌟 Galería Temática</h1>
+    <div class="galeria">
+      <div class="tarjeta grande">
+        <img src="img/Denji.png" alt="Protagonista" onclick="cambiarImagen(this)">
+        <h3>Protagonista</h3>
+      </div>
+      <div class="tarjeta mediana">
+        <img src="img/sendo1.jpg" alt="Elemento Secundario" onclick="cambiarImagen(this)">
+        <h3>Elemento Secundario</h3>
+      </div>
+      <div class="tarjeta pequeña">
+        <img src="img/dante.png" alt="Dante" onclick="cambiarImagen(this)">
+        <h3>Curiosidad 1</h3>
+      </div>
+      <div class="tarjeta pequeña">
+        <img src="img/spiderman1.png" alt="Peter" onclick="cambiarImagen(this)">
+        <h3>Curiosidad 2</h3>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
