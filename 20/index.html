@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitio Temático Flex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <h2>🌍 Explorador</h2>
+    <ul>
+      <li>
+        <a href="#">
+          <div class="nav-icon">🏠</div>
+          <span class="nav-text">Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="nav-icon">🖼️</div>
+          <span class="nav-text">Galería</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="nav-icon">⭐</div>
+          <span class="nav-text">Favoritos</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="nav-icon">📧</div>
+          <span class="nav-text">Contacto</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+
+  <main class="contenido">
+    <h1>🌟 Galería Temática</h1>
+    <div class="galeria">
+      <div class="tarjeta grande">
+        <img src="img/Denji.png" alt="Protagonista" onclick="cambiarImagen(this)">
+        <h3>Denji</h3>
+      </div>
+      <div class="tarjeta mediana">
+        <img src="img/sendo1.png" alt="Elemento Secundario" onclick="cambiarImagen(this)">
+        <h3>Sendo</h3>
+      </div>
+      <div class="tarjeta pequeña">
+        <img src="img/dante.png" alt="Dante" onclick="cambiarImagen(this)">
+        <h3>Dante</h3>
+      </div>
+      <div class="tarjeta pequeña2">
+        <img src="img/spiderman1.png" alt="Peter" onclick="cambiarImagen(this)">
+        <h3>Spider-man</h3>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
