@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid #ccc;
+}
+
+
+
+.feed-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.feed-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profile-section {
+    flex-shrink: 0;
+    width: 140px;
+}
+
+.profile-card {
+    border: 2px solid #000;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    font-size: 30px;
+}
+
+.add-avatar {
+    color: #0066cc;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.posts-section {
+    flex: 1;
+}
+
+.post {
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-likes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.likes-count {
+    font-size: 14px;
+    color: #333;
+}
+
+.like-btn {
+    background-color: #000;
+    border: 2px solid #000;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.like-btn:hover {
+    background-color: #B8860B;
+}
+
+.post-content {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.post-link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #fffacd;
+    border: 1px solid #daa520;
+    padding: 8px;
+    font-size: 11px;
+    max-width: 150px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    right: 20px;
+    top: 150px;
+}

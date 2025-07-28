@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Feed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="feed-container">
+            <div class="feed-title">Your Feed</div>
+            
+            <div class="main-content">
+                <div class="profile-section">
+                    <div class="profile-card">
+                        <div class="avatar">👤</div>
+                        <div class="add-avatar">Add an avatar</div>
+                        <div class="username">James Doe</div>
+                    </div>
+                </div>
+
+                <div class="posts-section">
+                    <div class="post">
+                        <div class="post-header">
+                            <span class="post-author">Neil M</span>
+                            <div class="post-likes">
+                                <span class="likes-count" id="likes1">9 like(s)</span>
+                                <button class="like-btn" id="btn1">Like</button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            I just set up this new discord bot, let me know what you all think. <a href="#" class="post-link">link</a>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post-header">
+                            <span class="post-author">Nichole K</span>
+                            <div class="post-likes">
+                                <span class="likes-count" id="likes2">12 like(s)</span>
+                                <button class="like-btn" id="btn2">Like</button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            Just finished my <a href="#" class="post-link">next comic</a>, check it out.
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post-header">
+                            <span class="post-author">Jim R</span>
+                            <div class="post-likes">
+                                <span class="likes-count" id="likes3">9 like(s)</span>
+                                <button class="like-btn" id="btn3">Like</button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            I can't stop listening to the <a href="#" class="post-link">new album</a>. Who else is liking it?
+                        </div>
+                    </div>
+                        <div class="post-content">
+                            Finally got my <a href="#" class="post-link">portfolio site</a> up and running! What do you think?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tooltip">
+            Clicking each like button will increase the number of likes for each post by 1
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
