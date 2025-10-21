@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoClima</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
+</head>
+<body onload="showLoadingAlert()">
+
+    <div class="contenedor">
+
+        <header>
+            <div class="encabezado-izquierda">
+                <h1>DojoClima</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="cityAlert(this)">Burbank</a></li>
+                        <li><a href="#" onclick="cityAlert(this)">Chicago</a></li>
+                        <li><a href="#" onclick="cityAlert(this)">Dallas</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="encabezado-derecha">
+                <label for="selector-temp">show temperature in</label> 
+                <select id="selector-temp" onchange="convertTemps(this)">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <section class="info-ciudad">
+                <h2>San Jose</h2>
+            </section>
+
+            <section class="tarjetas-clima">
+                <div class="tarjeta">
+                    <h3>Today</h3>
+                    <img src="img/some_rain.png" alt="Icono de lluvia" class="icono-clima"> 
+                    <p class="descripcion">some rain</p>
+                    <p class="temperaturas">
+                        <span class="alta" data-c="24">24°</span>
+                        <span class="baja" data-c="18">18°</span>
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Tomorrow</h3>
+                    <img src="img/some_sun.png" alt="Icono de sol" class="icono-clima"> 
+                    <p class="descripcion">some sun</p>
+                    <p class="temperaturas">
+                        <span class="alta" data-c="27">27°</span>
+                        <span class="baja" data-c="19">19°</span>
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Friday</h3>
+                    <img src="img/some_clouds.png" alt="Icono de nubes" class="icono-clima"> 
+                    <p class="descripcion">some clouds</p>
+                    <p class="temperaturas">
+                        <span class="alta" data-c="21">21°</span>
+                        <span class="baja" data-c="16">16°</span>
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Saturday</h3>
+                    <img src="img/some_sun.png" alt="Icono de sol" class="icono-clima"> 
+                    <p class="descripcion">some sun</p>
+                    <p class="temperaturas">
+                        <span class="alta" data-c="26">26°</span>
+                        <span class="baja" data-c="21">21°</span>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <div id="alerta-modal" class="envoltura-modal">
+            <a href="#" class="superposicion-modal" onclick="dismissLoading()"></a> 
+            <div class="contenido-modal">
+                <p>This page says</p>
+                <div class="caja-alerta">
+                    <p>Loading weather report...</p>
+                    <a href="#" class="boton-alerta" onclick="dismissLoading()">OK</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mensaje-cookie" class="contenedor-banner-cookie">
+            <div class="banner-cookie">
+                <img src="img/cookie.png" alt="Icono de cookie" class="icono-cookie"> 
+                <div class="texto-cookie">
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (totally not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button class="boton-cookie" onclick="dismissCookie()">I Accept</button> 
+            </div>
+        </div>
+
+        </div> 
+</body>
+</html>
